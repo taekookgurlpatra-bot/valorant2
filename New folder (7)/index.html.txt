@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Valentine 💗</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="progress"></div>
+<div id="heartRain"></div>
+
+<!-- INTRO -->
+<section class="page active" id="intro">
+<h1>Gathering sparkles 💗✨..</h1>
+<img src="assets/gif1.gif" class="gif">
+<button onclick="go('menu')">Enter 💗</button>
+</section>
+
+<!-- MENU -->
+<section class="page" id="menu">
+<img src="assets/gif2.gif" class="gif">
+<h2>Enjoy ur presents qt 😘🫵🏻</h2>
+
+<div class="grid">
+<div class="card" onclick="go('polaroid')">You + Me = ♡</div>
+<div class="card" onclick="go('games')">Fun Zone 💗✨</div>
+<div class="card" onclick="go('music')">Melodies enchanted by you 🎧🎀</div>
+<div class="card" onclick="go('photos')">Things that feel like you 🫂🎀</div>
+</div>
+
+<img src="assets/heart.gif" class="heartBtn" onclick="go('quiz')">
+</section>
+
+<!-- POLAROID -->
+<section class="page" id="polaroid">
+<h2>Us 💗🫂</h2>
+<div class="scroll">
+<img src="assets/polaroid1.png">
+<img src="assets/polaroid2.png">
+<img src="assets/polaroid3.png">
+<img src="assets/polaroid4.png">
+</div>
+<button onclick="back()">Back</button>
+</section>
+
+<!-- PHOTO STACK -->
+<section class="page" id="photos">
+<h2>Things that feel like you 🫂🎀</h2>
+<div class="scroll">
+<img src="assets/photo-image.png">
+<img src="assets/photo-image.png">
+<img src="assets/photo-image.png">
+</div>
+<button onclick="back()">Back</button>
+</section>
+
+<!-- GAMES -->
+<section class="page" id="games">
+<h2>Fun Zone 🎮</h2>
+
+<div class="grid">
+<div class="game" onclick="startPuzzle()">🧩 Puzzle</div>
+<div class="game" onclick="heartGame()">💗 Tap Hearts</div>
+</div>
+
+<div id="gameArea"></div>
+<button onclick="back()">Back</button>
+</section>
+
+<!-- MUSIC -->
+<section class="page" id="music">
+<h2>Songs that remind me of you 💗</h2>
+
+<div class="song">
+<img src="assets/spotify1.png">
+<button onclick="play(0)">▶</button>
+</div>
+
+<div class="song">
+<img src="assets/spotify2.png">
+<button onclick="play(1)">▶</button>
+</div>
+
+<div class="song">
+<img src="assets/spotify3.png">
+<button onclick="play(2)">▶</button>
+</div>
+
+<button onclick="back()">Back</button>
+</section>
+
+<!-- QUIZ -->
+<section class="page" id="quiz">
+<h2>Quiz About Us 💗</h2>
+
+<div id="quizBox"></div>
+</section>
+
+<!-- LETTER 1 -->
+<section class="page" id="letter1">
+<h2>Tap to open 💌</h2>
+<img src="assets/letter1.png" class="letter" onclick="showLetter1()">
+<p id="l1"></p>
+<button onclick="go('letter2')">Next</button>
+</section>
+
+<!-- LETTER 2 -->
+<section class="page" id="letter2">
+<h2>Tap to open 💌</h2>
+<img src="assets/letter2.png" class="letter" onclick="showLetter2()">
+<p id="l2"></p>
+<button onclick="go('final')">Finish</button>
+</section>
+
+<!-- FINAL -->
+<section class="page" id="final">
+<h1>Thank You Ashraf 💗</h1>
+<img src="assets/final.gif" class="gif">
+<button onclick="location.reload()">Restart</button>
+</section>
+
+<audio src="assets/song1.mp3"></audio>
+<audio src="assets/song2.mp3"></audio>
+<audio src="assets/song3.mp3"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
